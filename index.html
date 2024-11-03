@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+    <div class="w-full max-w-md p-6 bg-white rounded-lg shadow-lg">
+        <h1 class="text-2xl font-bold mb-4 text-center">Lista de Tarefas</h1>
+        <form id="taskForm" class="flex mb-4">
+            <input type="text" id="taskInput" class="flex-1 p-2 border border-gray-300 rounded" placeholder="Nova tarefa" required>
+            <button type="submit" class="ml-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700">Adicionar</button>
+        </form>
+        <ul id="taskList" class="space-y-2">
+            <!-- Lista de tarefas renderizada aqui -->
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
